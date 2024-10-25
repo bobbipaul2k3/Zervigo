@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Search, MapPin, User } from "lucide-react";
-import './app.css';
+import './App.css';
 import { BackgroundBeamsWithCollision } from "./components/ui/background-beams-with-collision";
 import { PinContainer } from "./components/3d-pin";
 import { Link } from "react-router-dom";
