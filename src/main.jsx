@@ -3,7 +3,6 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import './index.css';
 import ZomatoLikeSite from './sample.jsx';
 import React from "react";
 
