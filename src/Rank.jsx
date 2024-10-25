@@ -1,5 +1,3 @@
-import React from 'react'
-import ProfilePage from './components/Upro'
 import { Link } from 'react-router-dom'
 
 const profiles = [

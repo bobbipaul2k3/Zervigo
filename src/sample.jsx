@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Search, MapPin, User } from "lucide-react";
+import { useEffect, useState } from "react";
+import {  User } from "lucide-react";
 import './App.css';
 import { BackgroundBeamsWithCollision } from "./components/ui/background-beams-with-collision";
 import { PinContainer } from "./components/3d-pin";
@@ -7,9 +7,6 @@ import { Link } from "react-router-dom";
 import {
     Dialog,
     DialogContent,
-    DialogDescription,
-    DialogHeader,
-    DialogTitle,
     DialogTrigger,
 } from "./components/ui/dialog"
 import SignupFormDemo from "./components/Sup";
@@ -49,7 +46,7 @@ export default function ServiceProviderPage() {
             name: "John Doe",
             service: "Plumbing",
             rating: 4.5,
-            image: "\istockphoto-1440019701-612x612.jpg",
+            image: "/istockphoto-1440019701-612x612.jpg",
         },
         {
             id: 2,
@@ -174,8 +171,8 @@ export default function ServiceProviderPage() {
                     <section className="container mx-auto px-4 py-8 bg-white">
                         <h1 className="text-3xl mb-6 text-black bg-white font-extrabold mt-10">TOP SERVICES</h1>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-white">
-                            {serviceProviders.map((provider) => (
-                                <PinContainer
+                            {serviceProviders.map((provider, index) => (
+                                <PinContainer key={index}
                                     title={provider.service}
                                     href="./profile"
                                 >

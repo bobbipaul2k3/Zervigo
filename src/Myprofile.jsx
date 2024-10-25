@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MapPin, Mail, Home, Loader2, Lock, Edit2, Save, X } from "lucide-react";
 
 const SecureProfileWindow = () => {
