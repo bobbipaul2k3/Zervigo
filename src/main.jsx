@@ -5,7 +5,6 @@ import {
 } from "react-router-dom";
 import './index.css';
 import ZomatoLikeSite from './sample.jsx';
-import  { ExpandableCardDemo } from "./components/exp/use-outside-click.jsx";
 import React from "react";
 
 import SignupFormDemo from "./components/Sup.jsx";
