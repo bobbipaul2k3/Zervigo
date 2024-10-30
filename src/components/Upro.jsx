@@ -17,23 +17,19 @@ const Badge = ({ children }) => (
 
 export default function ProfilePage() {
   return (
-    <div className="max-w-md w-full mx-auto p-4 md:p-8 bg-white dark:bg-black">
-      <div className="min-h-screen  flex items-center justify-center p-4">
-        <div className="bg-white p-8 w-96 h-96 flex items-center justify-center">
-          <div className="flex flex-col md:flex-row w-full">
-            <div className="md:w-1/3 mb-4 md:mb-0 relative">
-              <img
+    <div className=" w-full  p-8 bg-white dark:bg-black">
+         <img
                 src="Worker.jpg"
                 alt="Profile Picture"
-                className="rounded-full w-48 h-auto object-cover mx-auto"
+                className=" w-60 h-60 object-cover  ml-72 mt-0 "
               />
-              <div className="absolute top-0 right-0 md:right-12 bg-primary text-primary-foreground rounded-full w-16 h-16 flex items-center justify-center">
-                <span className="text-2xl font-bold">#42</span>
-              </div>
-            </div>
-            <div className="md:w-2/3 md:pl-8">
+      <div className="min-h-screen  flex  ml-10 justify-center ">
+        <div className="bg-white p-8 w-96 h-96 flex items-center justify-center">
+          <div className="flex flex-col md:flex-row w-full mt-0 mb-72">
+           
+            <div className="md:w-2/3 ">
               <div className="mb-4">
-                <h1 className="text-3xl font-bold">John Doe</h1>
+                <h1 className="text-3xl font-bold mt-0">John Doe</h1>
                 <p className="text-gray-600 flex items-center mt-1">
                   <MapPin className="w-4 h-4 mr-1" />
                   New York, USA
@@ -43,7 +39,7 @@ export default function ProfilePage() {
                 <h2 className="text-xl font-semibold mb-2">Contact</h2>
                 <p className="text-gray-600 flex items-center">
                   <Mail className="w-4 h-4 mr-2" />
-                  johndoe@example.com
+                  jo@email.com
                 </p>
               </div>
               <div className="mb-4">
