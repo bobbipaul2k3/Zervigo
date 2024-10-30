@@ -4,86 +4,77 @@ const profiles = [
   {
     id: 1,
     name: "Alice Johnson",
-    photo: "/placeholder.svg?height=300&width=300",
+    photo: "Worker.jpg",
     services: ["Web Design", "UX Research"],
     bio: "Experienced web designer with a keen eye for user-centric designs. I specialize in creating intuitive and visually appealing websites.",
     rating: 4.9,
     reviews: 203,
-    startingPrice: 50,
+    startingPrice: 500,
     rank: 1,
   },
   {
     id: 2,
     name: "Bob Smith",
-    photo: "/placeholder.svg?height=300&width=300",
+    photo: "Worker.jpg",
     services: ["Mobile Development", "UI Design"],
     bio: "Passionate mobile developer with 5+ years of experience. I create sleek, high-performance apps for iOS and Android.",
     rating: 4.8,
     reviews: 187,
-    startingPrice: 65,
+    startingPrice: 650,
     rank: 2,
   },
   {
     id: 3,
     name: "Carol Williams",
-    photo: "/placeholder.svg?height=300&width=300",
+    photo: "Worker.jpg",
     services: ["Data Analysis", "Machine Learning"],
     bio: "Data scientist with a PhD in Machine Learning. I help businesses make data-driven decisions and implement AI solutions.",
     rating: 4.9,
     reviews: 156,
-    startingPrice: 80,
+    startingPrice: 800,
     rank: 3,
   },
   {
     id: 4,
     name: "David Brown",
-    photo: "/placeholder.svg?height=300&width=300",
+    photo: "Worker.jpg",
     services: ["SEO Optimization", "Content Writing"],
     bio: "SEO expert and content strategist. I help businesses improve their online visibility and engage their audience with compelling content.",
     rating: 4.7,
     reviews: 98,
-    startingPrice: 40,
+    startingPrice: 400,
   },
   {
     id: 5,
     name: "Eva Davis",
-    photo: "/placeholder.svg?height=300&width=300",
+    photo: "Worker.jpg",
     services: ["Social Media Marketing", "Brand Strategy"],
     bio: "Creative social media marketer with a background in brand management. I help businesses build a strong online presence and engage their target audience.",
     rating: 4.8,
     reviews: 132,
-    startingPrice: 55,
+    startingPrice: 550,
   },
   {
     id: 6,
     name: "Frank Miller",
-    photo: "/placeholder.svg?height=300&width=300",
+    photo: "Worker.jpg",
     services: ["Video Editing", "Animation"],
     bio: "Professional video editor and animator with 7+ years of experience. I create engaging visual content for businesses and individuals.",
     rating: 4.9,
     reviews: 201,
-    startingPrice: 70,
+    startingPrice: 700,
   },
   {
     id: 7,
     name: "Grace Taylor",
-    photo: "/placeholder.svg?height=300&width=300",
+    photo: "Worker.jpg",
     services: ["Cybersecurity", "Network Administration"],
     bio: "Certified cybersecurity expert with a focus on network security. I help businesses protect their digital assets and implement robust security measures.",
     rating: 4.8,
     reviews: 87,
-    startingPrice: 90,
+    startingPrice: 900,
   },
-  {
-    id: 8,
-    name: "Henry Wilson",
-    photo: "/placeholder.svg?height=300&width=300",
-    services: ["Cloud Architecture", "DevOps"],
-    bio: "Experienced cloud architect and DevOps engineer. I help businesses optimize their infrastructure and streamline their development processes.",
-    rating: 4.7,
-    reviews: 112,
-    startingPrice: 75,
-  },
+ 
 ];
 
 function ProfileCard({ profile, isTopThree }) {
@@ -133,7 +124,7 @@ function ProfileCard({ profile, isTopThree }) {
         <div className="flex justify-between items-center">
           <span className="text-gray-500 text-sm">Starting at</span>
           <span className="text-green-600 font-bold">
-            ${profile.startingPrice}
+            Rs.{profile.startingPrice}
           </span>
         </div>
       </div>
