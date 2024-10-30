@@ -23,9 +23,9 @@ export default function ProfilePage() {
           <div className="flex flex-col md:flex-row w-full">
             <div className="md:w-1/3 mb-4 md:mb-0 relative">
               <img
-                src="/placeholder.svg?height=300&width=300"
+                src="Worker.jpg"
                 alt="Profile Picture"
-                className="rounded-full w-48 h-48 object-cover mx-auto"
+                className="rounded-full w-48 h-auto object-cover mx-auto"
               />
               <div className="absolute top-0 right-0 md:right-12 bg-primary text-primary-foreground rounded-full w-16 h-16 flex items-center justify-center">
                 <span className="text-2xl font-bold">#42</span>
